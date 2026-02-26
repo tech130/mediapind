@@ -85,17 +85,18 @@ export default function HeroSection() {
 
   {/* Button */}
   <a href="#MainForm"><button
-    className="relative z-10
-               group inline-flex items-center 
-               gap-[11.49px]
-               pl-[34px] pr-[8px] py-[8px]
-               bg-[#2264EC]
-               rounded-[34.06px]
-               text-white
-               text-[18px]
-               font-medium
-               transition-all duration-300"
-  >
+  className="relative z-10
+             group inline-flex items-center 
+             gap-[11px]
+             pl-4 pr-2 py-[8px]
+             md:pl-[34px] md:pr-[8px]
+             bg-[#2264EC]
+             rounded-[34px]
+             text-white
+             text-[16px]
+             font-medium
+             transition-all duration-300"
+>
     <span className="whitespace-nowrap">
       As Influencers
     </span>
@@ -126,18 +127,19 @@ export default function HeroSection() {
 
   {/* Button */}
   <a href="#MainForm"><button
-    className="relative z-10
-               group inline-flex items-center
-               gap-[11.49px]
-               pl-[34px] pr-[8px] py-[8px]
-               bg-[#F4F6FF]
-               text-[#2264EC]
-               rounded-[34.06px]
-               text-[18px]
-               font-medium
-               border border-[#2264EC]/40
-               transition-all duration-300"
-  >
+  className="relative z-10
+             group inline-flex items-center
+             gap-[11px]
+             pl-4 pr-2 py-[8px]
+             md:pl-[34px] md:pr-[8px]
+             bg-[#F4F6FF]
+             text-[#2264EC]
+             rounded-[34px]
+             text-[16px]
+             font-medium
+             border border-[#2264EC]/40
+             transition-all duration-300"
+>
     <span className="whitespace-nowrap">
       As Brand
     </span>
@@ -166,7 +168,7 @@ export default function HeroSection() {
     <motion.div
   {...floatAnim}
   style={{ rotate: -10 }}
-  className="hidden md:flex items-center gap-3 absolute left-6 top-20
+  className="hidden lg:flex items-center gap-3 absolute left-6 top-20
              rounded-[18px] px-5 py-3
              bg-gradient-to-b from-white to-[#f5f5f5]
              border border-gray-200/80
@@ -195,7 +197,7 @@ export default function HeroSection() {
   {...floatAnim}
   style={{ rotate: 10 }}
   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-  className="hidden md:flex items-center gap-2 absolute left-40 top-40
+  className="hidden lg:flex items-center gap-2 absolute left-40 top-40
              rounded-[18px] px-3 py-2
              bg-gradient-to-b from-white to-[#f5f5f5]
              border border-gray-200/80
@@ -228,7 +230,7 @@ export default function HeroSection() {
   {...floatAnim}
   style={{ rotate: 10, zIndex: 1 }}
   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-  className="hidden md:flex flex-col items-start gap-2 absolute right-40 top-7
+  className="hidden lg:flex flex-col items-start gap-2 absolute right-40 top-7
              rounded-[18px] px-3 py-2
              bg-gradient-to-b from-white to-[#f5f5f5]
              border border-gray-200/80
@@ -278,7 +280,7 @@ export default function HeroSection() {
   {...floatAnim}
   style={{ rotate: -20 }}
   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-  className="hidden md:flex items-center gap-2 absolute right-20 top-24
+  className="hidden lg:flex items-center gap-2 absolute right-20 top-24
              rounded-[18px] px-3 py-2
              bg-gradient-to-b from-white to-[#f5f5f5]
              border border-gray-200/80
@@ -318,7 +320,7 @@ export default function HeroSection() {
       <motion.div
   {...floatAnim}
   style={{ rotate: 10 }}
-  className="hidden md:flex items-center gap-3 absolute left-32 bottom-52
+  className="hidden lg:flex items-center gap-3 absolute left-32 bottom-52
              rounded-[18px] px-5 py-3
              bg-gradient-to-b from-white to-[#f5f5f5]
              border border-gray-200/80
@@ -349,7 +351,7 @@ export default function HeroSection() {
 <motion.div
   {...floatAnim}
   style={{ rotate: -10 }}
-  className="hidden md:flex flex-col absolute left-20 bottom-6
+  className="hidden lg:flex flex-col absolute left-20 bottom-6
              rounded-[12px] p-2
              bg-white
              shadow-[0_6px_10px_rgba(0,0,0,0.15)]"
@@ -387,7 +389,7 @@ export default function HeroSection() {
      <motion.div
   {...floatAnim}
   transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
-  className="hidden md:flex absolute right-20 bottom-20
+  className="hidden lg:flex absolute right-20 bottom-20
              rotate-[-10deg]
              bg-white
              shadow-[0_6px_12px_rgba(0,0,0,0.25)]
@@ -433,7 +435,7 @@ export default function HeroSection() {
   {...floatAnim}
    style={{ rotate: -25 }}
   transition={{ duration: 4.2, repeat: Infinity, ease: "easeInOut" }}
-  className="hidden md:flex absolute right-64 bottom-64
+  className="hidden lg:flex absolute right-64 bottom-64
              rotate-[-23deg]
              bg-white
              shadow-[0_6px_10px_rgba(0,0,0,0.25)]

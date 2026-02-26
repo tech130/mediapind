@@ -96,11 +96,14 @@ export default function WhereWeOperate() {
                    [-webkit-mask-image:linear-gradient(to_bottom,transparent,black_40%,black_100%)]"
       />
 
-      <div className="relative max-w-[1400px] mx-auto grid md:grid-cols-2 gap-20 items-center">
+      {/* <div className="relative max-w-[1400px] mx-auto grid md:grid-cols-2 gap-20 items-center"> */}
+      <div className="relative max-w-[1400px] mx-auto grid 
+                md:grid-cols-1 lg:grid-cols-2 
+                gap-12 lg:gap-20 items-center">
         
         {/* Left Content */}
         <div>
-          <h2 className="text-5xl md:text-9xl font-bold leading-tight mb-6 text-[#1c1c3c]">
+          <h2 className="text-5xl md:text-6xl lg:text-9xl font-bold leading-tight mb-6 text-[#1c1c3c]">
             Where <br />
             We <br/><span className="text-blue-600">Operate</span>
           </h2>

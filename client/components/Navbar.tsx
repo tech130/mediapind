@@ -41,7 +41,8 @@ export default function Navbar() {
 </a>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-6">
+          {/* <div className="hidden md:flex items-center gap-6"> */}
+          <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.label}
@@ -54,7 +55,8 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Buttons */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* <div className="hidden md:flex items-center gap-4"> */}
+          <div className="hidden lg:flex items-center gap-4">
           <button
   onClick={() => setModalType("signin")}
   className="px-6 py-2 rounded-full bg-[#2264EC] text-white font-semibold inline-flex items-center gap-3 border border-blue"
@@ -81,10 +83,14 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Toggle */}
-          <button
+          {/* <button
             className="md:hidden"
             onClick={() => setMobileOpen(!mobileOpen)}
-          >
+          > */}
+          <button
+  className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition"
+  onClick={() => setMobileOpen(!mobileOpen)}
+>
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </nav>
@@ -96,7 +102,8 @@ export default function Navbar() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="md:hidden bg-white border-t"
+              // className="md:hidden bg-white border-t"
+              className="lg:hidden bg-white border-t"
             >
               <div className="px-6 py-4 flex flex-col gap-4">
                 {navLinks.map((link) => (
