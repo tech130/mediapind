@@ -139,7 +139,8 @@ export default function WhatWeOffer() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6"> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {offerings.map((item, idx) => {
             const isActive = activeIndex === idx;
 
@@ -149,7 +150,7 @@ export default function WhatWeOffer() {
                 onMouseEnter={() => setActiveIndex(idx)}
                 onMouseLeave={() => setActiveIndex(null)}
                 onClick={() => setActiveIndex(isActive ? null : idx)}
-                className="relative rounded-2xl overflow-hidden cursor-pointer min-h-[280px] border border-white/20 backdrop-blur-sm"
+                className="relative rounded-2xl overflow-hidden cursor-pointer min-h-[250px] border border-white/20 backdrop-blur-sm"
               >
 
                 {/* 🟦 CARD GRADIENT BACKGROUND */}
@@ -201,7 +202,8 @@ export default function WhatWeOffer() {
                       />
                     </div>
 
-                    <h3 className="font-bold text-2xl leading-snug">
+                    {/* <h3 className="font-bold text-2xl leading-snug"> */}
+                    <h3 className="font-bold text-lg md:text-xl leading-snug">
                       {item.title}
                     </h3>
                   </motion.div>

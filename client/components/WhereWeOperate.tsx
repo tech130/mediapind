@@ -69,9 +69,12 @@ function VerticalMarquee({
               {country.name}
             </p>
 
-            <span className="text-xs text-blue-600 mt-2 inline-block bg-blue-50 px-3 py-1 rounded-full">
+            {/* <span className="text-xs text-blue-600 mt-2 inline-block bg-blue-50 px-3 py-1 rounded-full">
               {country.region}
-            </span>
+            </span> */}
+            <span className="text-[6px] md:text-xs text-blue-600 mt-2 inline-block bg-blue-50 px-3 py-1 rounded-full">
+  {country.region}
+</span>
           </div>
         ))}
       </motion.div>

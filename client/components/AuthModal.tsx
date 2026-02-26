@@ -423,7 +423,7 @@ export default function AuthModal({ onClose, type }: AuthModalProps) {
         I agree to <span className="text-blue-600 font-semibold">Terms of Service</span> and{" "}
         <span className="text-blue-600 font-semibold">Privacy Policy</span>
       </label> */}
-      <label className="flex items-center gap-2 text-xs md:text-sm text-gray-500">
+      <label className="flex items-center gap-2 text-[10px] md:text-sm text-gray-500">
   <input type="checkbox" className="accent-blue-600" />
   I agree to <span className="text-blue-600 font-semibold">Terms of Service</span> and{" "}
   <span className="text-blue-600 font-semibold">Privacy Policy</span>

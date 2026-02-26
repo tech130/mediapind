@@ -14,7 +14,8 @@ const floatAnim = {
 
 export default function HeroSection() {
   return (
-    <section className="bg-white py-20 px-4 md:px-2 pb-0 " >
+    // <section className="bg-white py-20 px-4 md:px-2 pb-0 " >
+    <section className="bg-white pt-2 md:pt-20 pb-20 px-4 md:px-2">
       <div className="max-w-[2560px] mx-auto">
 
         {/* Main Rounded Container */}
@@ -37,12 +38,13 @@ export default function HeroSection() {
           
 
             {/* Top Badge */}
-            <div className="flex justify-center mb-10">
-              <div className="flex items-center gap-3 bg-white border border-blue-200 shadow-sm px-4 py-2 rounded-full text-sm font-medium ">
-                <span className="bg-blue-600 text-white text-xs px-3 py-1 rounded-full">
+            <div className="flex justify-center mb-8">
+              <div className="flex items-center gap-1 bg-white border border-blue-200 shadow-sm px-3 py-2 rounded-full text-sm font-medium ">
+                {/* <span className="bg-blue-600 text-white text-xs px-4 py-1 rounded-full"> */}
+                <span className="bg-blue-600 text-white text-xs px-4 py-2 rounded-full whitespace-nowrap">
                   New
                 </span>
-                <span className="text-gray-700">
+                <span className="text-gray-700 whitespace-nowrap">
                   100% Verified NRI Influencer Profiles
                 </span>
               </div>
